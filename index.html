@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+body{
+	background-color: black
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+}
+
+.grid-container {padding-top: 30px;
+  display: grid;
+  grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 25px 30px 37px 40px 20px 20px 40px 40px 40px 35px 35px 38px 35px 35px 35px 30px 30px 30px 30px 30px 30px 30px;
+  grid-template-rows: 50px 45px 46px 45px 40px 45px 35px 38px 30px 30px 30px 30px 30px 30px 40px 40px 30px 30px 35px 30px 30px 30px 20px 30px 28px 28px 20px 45px 28px 25px 25px 20px;
+  margin: auto;
+}
+
+.item {
+  margin: 2px auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  border: solid black 2px;
+  width: 300px; 
+  height: 50px; 
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: white;
+
+  }
+
+.item:hover + .hide0, .hide0a {/*width: 750px; 
+	height: 75px; */
+	display: block;
+	/*background-color: white;
+	border: solid black 2px;*/
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
+/*	font-family: 'Open Sans', sans-serif;
+	  font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px;*/ 
+ /* padding-top: 10px; */
+ /* padding-bottom: 10px; 
+  z-index: 2;*/
+}
+
+.text24{width: 110px; 
+	height: 30px; 
+	display: block;
+	background-color: white;
+	border: solid black 2px;
+	position: relative;
+	top: 10%;
+	left: 5%;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
+	font-family: 'Open Sans', sans-serif;
+	  font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px; 
+ /* padding-top: 10px; */
+  padding-bottom: 10px; 
+  z-index: 2;
+
+}
+
+.text23{
+width: 710px; 
+	height: 75px; 
+	display: block;
+	background-color: white;
+	border: solid black 2px;
+	position: relative;
+	top: 12%;
+	left: 5%;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
+	font-family: 'Open Sans', sans-serif;
+	  font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px; 
+ /* padding-top: 10px; */
+  padding-bottom: 10px; 
+  z-index: 2;
+}
+
+
+.item8 {
+  margin: 2px;
+  width: 470px;
+  height: 131px;
+  background-image: url("stlouis.png");
+  background-repeat: no-repeat;
+  grid-column-start: 34;
+  grid-row-start: 2-start;
+  grid-row-end: 2;
+ 
+}
+
+.item8:hover + .hide8{width: 300px; 
+	height: 130px;
+	display: block;
+	position: absolute;
+		background-color: white;
+	border: solid black 2px;
+	top: 35%;
+	left: 80%;
+		font-family: 'Open Sans', sans-serif;
+		  font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px; 
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+}
+
+
+
+
+.item11 {
+  margin: 2px;
+  width: 520px;
+  height: 215px;
+  background-image: url("led.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-row-start: 10-start;
+  grid-row-end: 10;
+ }
+
+.item11:hover + .hide11, .hide11a{
+	/*width: 300px; 
+	height: 80px; */
+	display: block;
+	position: absolute;
+	/*background-color: white;
+	border: solid black 2px;*/
+	top: 70%;
+	left: 20%;
+/*			font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+ /* padding-top: 10px; */
+  /*padding-bottom: 5px; */*/
+}
+
+.text13{
+width: 300px; 
+	height: 120px; 
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 70%;
+	left: 20%;
+			font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+   font-weight: 300;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+ /* padding-top: 10px; */
+  padding-bottom: 20px; 
+}
+
+.text14{
+	display: block;
+	position: absolute;
+
+	top: 70%;
+	left: 20%;
+padding-top: 150px;
+padding-left: 330px;
+}
+.item12 {
+  margin: 2px;
+  width: 320px;
+  height: 150px;
+  background-image: url("beatles.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 25;
+  grid-row-start: 10-start;
+  grid-row-end: 10;
+ }
+
+ .item12:hover + .hide12, .hide12a {/*width: 300px; */
+/* 	height: 100px;*/
+	display: block;
+	position: absolute;
+	/*background-color: white;
+	border: solid black 2px;*/
+	top: 70%;
+	left: 50%;
+	/*font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;*/
+ /* padding-top: 10px; */
+ /* padding-bottom: 5px; 
+  padding-left: 10px; 
+  padding-right: 10px;*/
+}
+.text9{
+width: 300px; 
+ 	height: 170px;
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 70%;
+	left: 50%;
+	font-family: 'Open Sans', sans-serif;
+	 font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 20px; 
+  padding-left: 10px; 
+  padding-right: 10px;
+
+}
+
+.text10{
+	display: block;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	padding-top:100px;
+padding-left:350px;
+}
+
+
+ .item13 {
+  margin: 2px;
+  width: 460px;
+  height: 190px;
+  background-image: url("jimi.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 25;
+  grid-row-start: 15-start;
+  grid-row-end: 15;
+ 
+}
+
+.item13:hover + .hide13{width: 300px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 100%;
+	left: 50%;
+	font-family: 'Open Sans', sans-serif;
+	 font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+ /* padding-top: 10px; */
+  padding-bottom: 20px;
+}
+
+
+ .item14 {
+  margin: 2px;
+  width: 550px;
+  height: 194px;
+  background-image: url("foot.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 33;
+  grid-row-start: 5-start;
+  grid-row-end: 5;
+}
+
+.item14:hover + .hide14{
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 50%;
+	left: 80%;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+   font-weight: 300;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+ /* padding-top: 10px; */
+  padding-bottom: 5px;
+}
+
+ .item15 {
+  margin: 2px;
+  width: 520px;
+  height: 186px;
+  background-image: url("monke.jpeg");
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-row-start: 17-start;
+  grid-row-end: 17; 
+}
+
+.item15:hover + .hide15, .hide15a{/*width: 300px; 
+	height: 100px;*/
+	display: block;
+	position: absolute;
+	/*background-color: white;
+	border: solid black 2px;*/
+	top: 100%;
+	left: 20%;
+	/*font-family: 'Open Sans', sans-serif;
+	 font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;*/
+ /* padding-top: 10px; */
+ /* padding-bottom: 5px;*/
+}
+
+.text19{
+width: 300px; 
+	height: 80px;
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 100%;
+	left: 20%;
+	font-family: 'Open Sans', sans-serif;
+	 font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+ /* padding-top: 10px; */
+  padding-bottom: 5px;
+}
+
+.text20{
+	/*width: 300px; 
+	height: 100px;*/
+	display: block;
+	position: absolute;
+	/*background-color: white;
+	border: solid black 2px;*/
+	top: 100%;
+	left: 20%;
+	padding-top: 100px;
+	/*font-family: 'Open Sans', sans-serif;
+	 font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;*/
+ /* padding-top: 10px; */
+ /* padding-bottom: 5px;*/
+}
+ .item16 {
+  margin: 2px;
+  width: 420px;
+  height: 150px;
+  background-image: url("bruce.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 34;
+  grid-row-start: 10-start;
+  grid-row-end: 10;
+  align-self: top;
+ }
+
+.item16:hover + .hide16, .hide16a{
+	display: block;
+	position: absolute;
+/*	background-color: white;
+	border: solid black 2px;*/
+	top: 70%;
+	left: 80%;
+		/*font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;*/
+ /* padding-top: 10px; */
+/*  padding-bottom: 5px; */
+}
+
+.text11{width: 300px; 
+	height: 100px;
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 70%;
+	left: 80%;
+		font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+   font-weight: 300;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+ /* padding-top: 10px; */
+  padding-bottom: 20px; 
+
+}
+
+.text12{padding-left: 350px; 
+	display: block;
+	position: absolute;
+	top: 70%;
+	left: 80%;
+	
+}
+  .item17 {
+  margin: 2px;
+  width: 370px;
+  height: 200px;
+  background-image: url("jets.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 39;
+  grid-row-start: 15-start;
+  grid-row-end: 15;
+  align-self: top;
+ }
+
+.item17:hover + .hide17{
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 90%;
+	left: 70%;
+			font-family: 'Open Sans', sans-serif;
+			 font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 10px;
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+}
+
+
+   .item18 {
+  margin: 2px;
+  width: 560px;
+  height: 200px;
+  background-image: url("all.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-row-start: 23-start;
+  grid-row-end: 23;
+  align-self: top;
+ }
+
+.item18:hover + .hide18{width: 300px;
+	height: 80px; 
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	 font-weight: 300;
+	top: 120%;
+	left: 10%;
+		padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+}
+
+  .item19 {
+  margin: 2px;
+  width: 490px;
+  height: 210px;
+  background-image: url("marine.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 25;
+  grid-row-start: 21-start;
+  grid-row-end: 21;
+  align-self: top;
+ }
+
+ .item19:hover + .hide19{width: 300px;
+ 	height: 80px; 
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 110%;
+	left: 50%;
+		padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Open Sans', sans-serif;
+	 font-weight: 300;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 20px; 
+}
+
+ .item20 {
+  margin: 2px;
+  width: 560px;
+  height: 250px;
+  background-image: url("base.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 39;
+  grid-row-start: 19-start;
+  grid-row-end: 19;
+  align-self: top;
+ }
+
+.item20:hover + .hide20{width: 300px; 
+	height: 130px;
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 110%;
+	left: 90%;
+		padding-left: 10px;
+		 font-weight: 300;
+	padding-right: 10px;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+}
+ .item21 {
+  margin: 2px;
+  width: 560px;
+  height: 250px;
+  background-image: url("symp.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-row-start: 30-start;
+  grid-row-end: 30;
+  align-self: top;
+ }
+
+ .item21:hover + .hide21{width: 300px; 
+ 	height: 150px;
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 140%;
+	left: 10%;
+	padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+
+}
+
+  .item22 {
+  margin: 2px;
+  width: 470px;
+  height: 250px;
+  background-image: url("yellow.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 25;
+  grid-row-start: 29-start;
+  grid-row-end: 29;
+  align-self: top;
+
+ }
+
+.item22:hover + .hide22, .hide22a{/*width: 300px;
+	height: 100px;*/
+	display: block;
+	position: absolute;
+	/*background-color: white;
+	border: solid black 2px;*/
+	top: 140%;
+	left: 60%;
+	/*padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;*/
+ /* padding-top: 10px; */
+/*  padding-bottom: 10px; */
+
+}
+
+.text21{width: 300px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 150%;
+	left: 60%;
+	padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 10px; 
+
+}
+
+.text22{/*width: 300px;
+	height: 100px;*/
+	display: block;
+	position: absolute;
+	/*background-color: white;
+	border: solid black 2px;*/
+	top: 150%;
+	left: 60%;
+
+	padding-left: 350px;
+	/*padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;*/
+ /* padding-top: 10px; */
+/*  padding-bottom: 10px; */
+
+}
+  .item23 {
+  margin: 2px;
+  width: 300px;
+  height: 100px;
+  background-image: url("queen.png");
+  background-repeat: no-repeat;
+  grid-column-start: 39;
+  grid-row-start: 25-start;
+  grid-row-end: 25;
+  align-self: top;
+ }
+
+ .item23:hover + .hide23{width: 300px; 
+ 	height: 80px; 
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 120%;
+	left: 80%;
+		padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 20px; 
+
+}
+ .item24 {
+  margin: 2px;
+  width: 500px;
+  height: 250px;
+  background-image: url("pitt.jpg");
+  background-repeat: no-repeat;
+  grid-column-start: 39;
+  grid-row-start: 29-start;
+  grid-row-end: 29;
+  align-self: top;
+ }
+
+ .item24:hover + .hide24, .hide24a {/*width: 300px; 
+ 	height: 80px; */
+	display: block;
+	position: absolute;
+	top: 140%;
+	left: 80%;
+/*	background-color: white;
+	border: solid black 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+/*  padding-bottom: 5px; */*/
+
+}
+
+.text3 {width: 300px; 
+ 	height: 80px; 
+	display: block;
+	position: absolute;
+	top: 140%;
+	left: 80%;
+	background-color: white;
+	border: solid black 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 20px; 
+}
+
+.text4 {
+	display: block;
+	position: absolute;
+	top: 120%;
+	left: 70%;
+	/*background-color: white;
+	border: solid black 2px;*/
+	padding-left: 2px;
+	padding-bottom: 50px;
+
+}
+
+.item2 {
+  margin-left: 12px;
+  width: 350px;
+	height: 155px;
+	background-image: url("green.png");
+	align-items: center;
+  background-repeat: no-repeat;
+  	  grid-column-start: 21;
+  grid-column-end: 22;
+  grid-row-start: 1-start;
+  grid-row-end: 1;
+  align-self: start;
+}
+
+.item2:hover + .hide2{
+/*	width: 320px;
+	height: 150px;*/
+	display: block;
+/*	background-color: white;
+	border: solid black 2px;*/
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	/*padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;*/
+/*  text-align: left;*/
+ /* padding-top: 10px; */
+/*  padding-bottom: 5px; */
+
+}
+
+.text15{
+width: 320px;
+	height: 150px;
+
+	background-color: white;
+	border: solid black 2px;
+	position: relative;
+	top: 20%;
+	left: 10%;
+	padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+
+}
+
+.text16{
+	width: 200px;
+	height: 80px;
+
+	background-color: white;
+	border: solid black 2px;
+	position: relative;
+	top: 30%;
+	left: 10%;
+	padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+
+}
+
+.item3 {
+  margin-bottom: 4px;
+  width: 410px;
+	height: 170px;
+		background-image: url("blue.png");
+  background-repeat: no-repeat;
+  	  grid-column-start: 32;
+  /*grid-column-end: 29;*/
+  grid-row-start: 1-start;
+  grid-row-end: 1;
+  align-self: end;
+}
+.item3:hover + .hide3, .hide3a{
+	display: block;
+	/*background-color: white;
+	border: solid black 2px;*/
+	position: absolute;
+	top: 10%;
+	left: 70%;
+	/*padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px;*/ 
+ /* padding-top: 10px; */
+ /* padding-bottom: 10px; */
+}
+
+.text17{width: 300px; 
+	height: 150px; 
+	display: block;
+	background-color: white;
+	border: solid black 2px;
+	position: absolute;
+	top: 10%;
+	left: 70%;
+	padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px; 
+ /* padding-top: 10px; */
+  padding-bottom: 10px; 
+
+}
+
+.text18{
+	display: block;
+	/*background-color: white;
+	border: solid black 2px;*/
+	position: absolute;
+	top: 10%;
+	left: 70%;
+	padding-left: 350px;
+/*	padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;*/
+/*	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px; */
+ /* padding-top: 10px; */
+/*  padding-bottom: 10px; */
+}
+
+.item4{
+  margin: 2px;
+ width: 364px;
+height: 140px;
+  background-image: url("purple.png");
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+ /* grid-column-end: 3;*/
+  grid-row-start: 1-start;
+  grid-row-end: 1-end;}
+
+.item4:hover + .hide4 {
+	width: 300px; 
+	height: 130px;
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 30%;
+	left: 10%;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px; 
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+}
+
+.item5 {
+  margin: 2px;
+  width: 460px;
+  height: 140px;
+  background-image: url("red.png");
+  background-repeat: no-repeat;
+ 	  grid-column-start: 20;
+  grid-column-end: 27;
+  grid-row-start: 2-start;
+  grid-row-end: 2;
+}
+
+.item5:hover + .hide5, .hide5a {
+	/*width: 300px;
+	height: 80px;*/
+	display: block;
+	position: absolute;
+/*	background-color: white;
+	border: solid black 2px;*/
+	top: 30%;
+	left: 50%;
+/*	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px; 
+ /* padding-top: 10px; */
+/*  padding-bottom: 5px; */*/
+}
+
+.text5{
+width: 300px;
+	height: 80px;
+	display: block;
+	position: absolute;
+	background-color: white;
+	border: solid black 2px;
+	top: 30%;
+	left: 20%;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px; 
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+}
+
+
+.text6{
+top: 30%;
+	left: 30%;
+	display: block;
+	position: absolute;
+	padding-top: 90px;
+
+}
+
+.item6 {
+  margin: 2px;
+  width: 250px;
+	height: 130px;
+	background-image: url("pink.png");
+	background-repeat: no-repeat;
+	justify-content: center;
+grid-column-start: 26;
+  /*grid-column-end:29;*/
+  grid-row-start: 5-start;
+  grid-row-end: 5;
+
+}
+.item6:hover + .hide6{width: 300px;
+	height: 100px;
+display: block;
+background-color: white;
+border: solid black 2px;
+position: absolute;
+	top: 50%;
+	left: 50%;
+	padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  text-align: left;
+  padding-left: 10px; 
+  padding-right: 10px; 
+ /* padding-top: 10px; */
+  padding-bottom: 5px; 
+ 
+}
+.item7 {
+  /*margin: 2px;*/
+  	width: 548px;
+	height: 200px;
+	background-image: url("freedom.png");
+	background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: 27;
+  grid-row-start: 5-start;
+  grid-row-end: 5;
+}
+.item7:hover + .hide7, .hide7a{/*width: 300px; 
+	height: 100px;*/
+	display: block;
+/*	background-color: white;*/
+	position: absolute;
+	top: 50%;
+	left: 20%;
+/*	border: solid black 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+		 font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 0px;*/
+	
+ }
+
+.text7{width: 300px; 
+	height: 100px;
+	display: block;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	border: solid black 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	 font-weight: 300;
+		 font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 0px;
+
+}
+
+.text8{/*width: 300px; 
+	height: 100px;
+	display: block;
+	background-color: white;*/
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	padding-left: 250px;
+	padding-top: 120px;
+/*	border: solid black 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+		 font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 0px;*/
+
+}
+
+.item1 {margin-top: 2px;
+	width: 410px;
+	height:150px;
+	background-image: url("stevie.png");
+	background-repeat: no-repeat;
+	 grid-column-start: 1;
+
+/*  grid-column-end: 21;*/
+  grid-row-start: 1-start;
+  grid-row-end: 1;
+   align-self: start;
+}
+
+.item1:hover + .hide1, .hide1a {
+	display: block;
+	background-color: white;
+	position: absolute;
+	/*border: solid black 2px;
+	padding-left: 10px;
+	padding-right: 10px;*/
+}
+
+.text {width: 300px;
+	height: 150px;
+	background-color: white;
+	position: absolute;
+	border: solid black 2px;
+	top: 30%;
+	left: 10%;
+	 font-weight: 300;
+	 font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 0px;
+}
+
+.text2 {
+	position: absolute;
+	top: 10%;
+	left: 90%;
+	padding-left: 350px;
+
+}
+
+.item9 {
+  margin: 2px;
+  width: 260px;
+  height: 70px;
+	background-image: url("syl.png");
+	background-repeat: no-repeat;
+	grid-column-start: 26;
+ /* grid-column-end: 30;*/
+  grid-row-start: 8-start;
+  grid-row-end: 8;
+  align-self: bottom;
+
+}
+.item9:hover + .hide9{width: 250px; 
+	height: 60px;
+	display: block;
+	background-color: white;
+	border: solid black 2px;
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	 font-weight: 300;
+		 font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 0px;
+}
+
+
+
+.hide1, .hide1a, .hide2, .hide2a, .hide3, .hide3a, .hide4, .hide5, .hide5a, .hide6, .hide7, .hide7a, .hide8, .hide8a, .hide9, .hide10, .hide0, .hide0a, .hide11, .hide11a, .hide12, .hide12a, .hide13, .hide14, .hide15, .hide15a, .hide16, .hide16a, .hide17, .hide18, .hide19, .hide20, .hide21, .hide22, .hide22a, .hide23, .hide24, .hide24a {
+	display: none;}
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+	<div class="header">
+	<div class="item">
+<!-- <header> -->
+<p>Tickets To Entertainment</p>
+<!-- </header> -->
+</div>
+<div class="hide0">
+	<div class="text24">
+	<p><b>Dates:</b> 1930s—1990s</p>
+</div>
+	<div class="text23">
+<p>Tickets are easily overlooked but essential to our enjoyment of theatre, music, sports, art and more. As we move away from the conventional paper ticket to e-tickets, here is a selection of tickets mainly from the Simthsonian Instituion's open access, but also from other collectible websites. These tickets have become culturally significant in reprsenting important events and entertainment memorabilia. They have become paper trails of collectible artifacts.</p></div>
+
+</div>
+
+<div class="grid-container">
+<div class="grid-item item1"></div>
+<div class="hide1">
+
+	<div class="text">
+		<p> A <a href="https://www.si.edu/object/ticket-stevie-wonder-performance-japan:nmaahc_2016.68.3?edan_q=tickets&edan_fq%5B0%5D=media_usage:CC0&oa=1&destination=/search/collection-images&searchResults=1&id=nmaahc_2016.68.3">ticket </a>for a 1981 Stevie Wonder <a href="https://www.youtube.com/watch?v=GvyV0S2yR9U"> performance </a>in Tokyo, Japan. This performance was part of the "Hotter Than July" tour. Stevie Wonder was a pioneer of using electric music in R&B and pop. <a href="https://www.newyorker.com/magazine/1995/03/13/realms-of-wonder">"Hotter than July peaked" </a>at number three on the Billboard Top LPs & Tapes and was certified Platinum by the Recording Industry Association of America (RIAA) on February 3, 1981. Hotter than July was nominated for Favorite Soul/R&B Album at the 1982 American Music Awards.</p>
+	</div>
+	<div class="text2">
+		<img src="stevieimg.jpg" height="200px" width="200px"/>
+	</div>
+</div>
+
+<div class="grid-item item2"></div>
+<div class="hide2">
+	<div class="text15">
+<p>
+A <a href="https://www.si.edu/object/ticket-world-heavyweight-championship-fight-sonny-liston-vs-cassius-clay:nmaahc_2012.173.2.2?edan_q=tickets&edan_fq%5B0%5D=media_usage:CC0&oa=1&destination=/search/collection-images&searchResults=1&id=nmaahc_2012.173.2.2">ticket </a> to the championship boxing match between Floyd Patterson and Sonny Liston February 25, 1964 at the <a href=" https://www.youtube.com/watch?v=yV2gN6iPny8">Las Vegas Convention Hall.</a>
+This ticket is part of the Leveling The Playing Field exhibtion at the <a href="https://www.si.edu/search/collection-images?edan_q=tickets%2B&edan_fq=media_usage%3ACC0&oa=1">Smithsonian.</a> The fight was originally set for April 4, 1963, in Miami Beach, Florida, but was changed to April 10 when Liston injured his left knee. The match was then moved to June 27 in Las Vegas, Nevada, because of a recurrence of the knee injury. The fight was shown on closed circuit TV in 143 locations in 109 cities.</p></div>
+<div class="text16">
+
+<p>There are seven punched holes throughout the ticket, five of the punched holes are cross-shaped, while the other two are crown-shaped. </p></div>
+</div>
+
+<div class="grid-item item3"></div>
+<div class="hide3">
+	<div class="text17">
+<p>A <a href="https://www.si.edu/object/ticket-boxing-match-between-muhammad-ali-and-sonny-liston:nmaahc_2013.120.13?edan_q=tickets&edan_fq%5B0%5D=media_usage:CC0&oa=1&destination=/search/collection-images&searchResults=1&id=nmaahc_2013.120.13">ticket </a>to the May 25, 1965 Heavyweight <a href="https://www.youtube.com/watch?v=RqAI10hSYC8">Boxing Match</a> for the Championship Of The World between Muhammad Ali and Leon Spinks at  the St. Dominics Arena in Lewiston, Maine. The two fights between Muhammad Ali and Sonny Liston were among the most anticipated, watched and controversial fights in the sport's history. <a href="https://www.si.com/boxing/2015/09/24/muhammad-ali-sonny-liston-ii-cassius-clay-thriller">Sports Illustrated magazine </a> named their first meeting, the Liston–Clay fight (Ali had not yet changed his name from Cassius Clay), as the fourth greatest sports moment of the twentieth century.</p></div>
+<div class="text18">
+	<img src="sport.jpg" height="200px" width="200px"></div>
+</div>
+
+<div class="grid-item item4"></div>
+<div class="hide4">
+<p>A <a href="https://www.si.edu/object/ticket-boxing-match-between-floyd-patterson-and-ingemar-johansson:nmaahc_2013.219.2?edan_q=tickets&edan_fq%5B0%5D=media_usage:CC0&oa=1&destination=/search/collection-images&searchResults=1&id=nmaahc_2013.219.2">ticket </a>to the World Heavyweight Championship boxing match June 25, 1959 between Floyd Patterson and Ingemar Johansson at Yankee Stadium. This ticket is part of the Leveling The Playing Field exhibtion at the  <a href="https://www.si.edu/search/collection-images?edan_q=tickets%2B&edan_fq=media_usage%3ACC0&oa=1">Smithsonian. </a> Ingemar Johansson of Sweden knocked out Floyd Patterson in the third round to win the world <a href="https://www.latimes.com/sports/story/2020-06-26/date-in-sports-ingemar-johansson-floyd-patterson-boxing-yankee-stadium#:~:text=%E2%80%9CToonder%20and%20Lightning%E2%80%9D%20struck%20at,the%20world%20heavyweight%20boxing%20championship.">Heavyweight Boxing Championship.</a>
+</p>
+</div>
+
+<div class="grid-item item5"></div>
+<div class="hide5">
+<div class="text5">
+<p>A <a href="https://www.si.edu/object/ticket-championship-boxing-match-between-muhammad-ali-and-ken-norton:nmaahc_2013.219.4?edan_q=tickets&edan_fq%5B0%5D=media_usage:CC0&oa=1&destination=/search/collection-images&searchResults=1&id=nmaahc_2013.219.4">ticket </a>to the September 28, 1976 <a href="https://www.youtube.com/watch?v=Atzy49nQoNM">championship boxing match </a> between Muhammad Ali and Ken Norton at Yankee Stadium. This ticket is part of the Leveling The Playing Field exhibtion at the  <a href="https://www.si.edu/search/collection-images?edan_q=tickets%2B&edan_fq=media_usage%3ACC0&oa=1">Smithsonian.</a></p></div>
+<div class="text6">
+	<img src="ali.png" height="100px" width="100px">
+</div>
+</div>
+
+<div class="grid-item item6"></div>
+<div class="hide6">
+	<p>A <a href="https://www.si.edu/object/ticket-pickwick-theatre:nmaahc_2011.160.11?edan_q=tickets&edan_fq%5B0%5D=media_usage:CC0&oa=1&destination=/search/collection-images&searchResults=1&id=nmaahc_2011.160.11">ticket</a> for the <a href="https://www.pickwicktheatre.com/">Pickwick Theatre </a>in Corinth Mississippi. Designed by Roscoe Harold Zook, William F. McCaughey, and Alfonso Iannelli, the Pickwick opened in 1928 as a vaudeville stage and movie theatre. It is widely recognized for its marquee and 100-foot tower.</p>
+</div>
+
+<div class="grid-item item7"></div>
+<div class="hide7">
+<div class="text7">
+	<p>A <a href="https://www.si.edu/object/ticket-tri-benefit-performance-freedom-singers:nmaahc_2014.51.1-.4?edan_q=tickets&edan_fq%5B0%5D=media_usage:CC0&oa=1&destination=/search/collection-images&searchResults=1&id=nmaahc_2014.51.1-.4">ticket</a> to a tri-benefit performance of the <a href="https://www.youtube.com/watch?v=duvoETGVvYU">Freedom Singers.</a> A tri-benefit performance featuring singers of the student nonviolent coordinating committee
+The concert was held january 31, 1963 at 4:00pm at the Bethesda Baptist church in new rochelle N.Y. This ticket is part of the Musical Crossroads exhibition at the <a href="https://www.si.edu/search/collection-images?edan_q=tickets%2B&edan_fq=media_usage%3ACC0&oa=1">Smithsonian.</a>
+</p></div>
+<div class="text8">
+	<img src="singer.jpg">
+</div>
+</div>
+
+
+<div class="grid-item item8"></div>
+<div class="hide8">
+	<p>
+A season <a href="https://www.si.edu/object/season-ticket-st-louis-browns-baseball-team:nmaahc_2013.183.4?edan_q=tickets&edan_fq%5B0%5D=media_usage:CC0&oa=1&destination=/search/collection-images&searchResults=1&id=nmaahc_2013.183.4">ticket </a>for the St. Louis Browns baseball team and the July 18, 1953 <a href="https://www.youtube.com/watch?v=A2m9bqFQT4M">game. </a>It is a special reserved seat ticket for section E row 1 seat 14. This ticket is part of the Musical Crossroads exhibtion at the <a href="https://www.si.edu/search/collection-images?edan_q=tickets%2B&edan_fq=media_usage%3ACC0&oa=1">Smithsonian.</a> From 1902 through 1953 the Browns won the American League pennant just once in 1944 when Major League baseball was depleted with most of its talent serving in World War II.
+
+</p>
+	</div>
+	
+
+
+<div class="grid-item item9"></div>
+<div class="hide9">
+	<p>A 1950s <a href="https://citywalkingguide.com/washingtondceastmall/nationalsylvantheater">Sylvan Movie Theatre</a> <a href="https://www.hippostcard.com/listing/4-sylvan-movie-theatre-tickets-sylvania-ohio-oh-1950s/15856382">Ticket.</a> The theatre is in Sylvania Ohio. The Sylvan Theater was the first federally funded theater in the United States.</p>
+</div>
+<!-- </div> -->
+
+<div class="grid-item item11"></div>
+<div class="hide11">
+	<div class="text13">
+	<p>A <a href="https://collectiblesfromthepast.wordpress.com/2013/01/28/collecting-concert-ticket-stubs/">ticket </a>to the Jam-Concerts West Led Zeppelin <a href="https://www.youtube.com/watch?v=3lVGwqAJKN0">concert </a> August 23, 1970 at the Convention Center Arena in San Antonio, Texas. The show was <a href="https://www.ledzeppelin.com/show/august-23-1970">cancelled </a>and Zeppelin performed in Saint Louis the following night. Led Zeppelin's Summer 1970 North American Tour was the sixth concert tour of North America by the rock band. The tour commenced on 10 August and concluded on 19 September 1970.</p></div>
+	<div class="text14">
+<img src="brit.png" height="200px" width="400px">
+</div>
+</div>
+
+<div class="grid-item item12"></div>
+<div class="hide12">
+	<div class="text9">
+	<p>A <a href="http://cinematreasures.org/theaters/3705/comments">ticket </a>to The Beatles March 15 1964 <a href="https://www.youtube.com/watch?v=aeswlOJEdQg">CCTV showing </a> at the Norva Theatre, V.A.with guest perfromances by The Beach Boys and Lesley Gore. Viewing the footage of the concert debut at the Washington coliseum. About a month later, footage of the concert was combined with separate footage of the performances by the Beach Boys and Lesley Gore, Shown in selected U.S. Movie theaters as a closed circuit concert. It was transmitted over telephone lines on four separate occasions over two weekends in March. "The Beach Boys/Gore footage was largely unseen after that until being re-discovered in the 90's.</p></div>
+<div class="text10">
+	<img src="beat.png" height="200px" width="200px">
+</div>
+</div>
+
+<div class="grid-item item13"></div>
+<div class="hide13">
+	<p>A <a href="https://www.ebay.com/itm/1-1970-JIMI-HENDRIX-VINTAGE-UNUSED-FULL-CONCERT-TICKET-Berkeley-laminated-repro-/264687429784">ticket</a> to the May 30, 1970 Jimi Hendrix <a href="https://www.youtube.com/watch?v=kU2R5PUiWQk"> performance </a>at the Berkeley Community Theatre. Live at Berkeley is a live album by American rock musician Jimi Hendrix. It documents his second performance at the Berkeley Community Theatre on May 30, 1970, and was released by MCA Records on September 16, 2003. </p>
+	
+</div>
+<div class="grid-item item14"></div>
+<div class="hide14">
+	<p>A <a href="
+https://www.amazon.com/October-Football-Cleveland-Browns-Giants/dp/B011RR8TBG
+">ticket</a> to the December 3, 1950 football <a href="https://www.youtube.com/watch?v=ktNhED1kRjU"> game </a>between the New york Gaints and the New York Yanks at the Polo Grounds. The ticket was printed by The Brown Ticket corp., N.Y.C. The Polo Grounds was the name of three stadiums in Upper Manhattan, New York City, used mainly for professional baseball and American football from 1880 through 1963. The original Polo Grounds, opened in 1876 and demolished in 1889, was built for the sport of polo. In American football, the third Polo Grounds was home to the New York Brickley Giants for one game in 1921 and the New York Giants from 1925 to 1955. The New York Jets of the American Football League played at the stadium from the league's inaugural season of 1960 through 1963.</p>
+</div>
+<div class="grid-item item15"></div>
+<div class="hide15">
+	<div class="text19">
+	<p> A <a href="https://www.monkeeslivealmanac.com/blog/1969-concert-ticket">ticket</a> for the Monkees <a href="https://www.youtube.com/watch?v=3_9TGhvigSs&feature=emb_logo">concert </a> in Massachusetts on June 20, 1969 at the Eastern States Expo Mickey Dolenz, Mike Nesmith and Davey Jones of The Monkees would have their last tour until a partial reunion tour in 1986.</p></div>
+	<div class="text20">
+		<img src="monkey.jpg" height="200px" width="100px">
+	</div>
+</div>
+
+<div class="grid-item item16"></div>
+<div class="hide16">
+	<div class="text11">
+	<p>A <a href="https://www.ebay.com/itm/1976-Bruce-Springsteen-unused-concert-ticket-Santa-Barbara-Born-To-Run-Tour-/321617319350">ticket </a>to the October 5, 1976 Bruce Springsteen <a href="https://www.youtube.com/watch?v=KngiJUNdsu0">performance</a> at the Santa Barbara County Bowl. He is both a solo artist and the leader of the E Street Band. Springsteen has become known for his poetic, socially conscious lyrics and energetic stage performances, sometimes lasting up to four hours in length. </p></div>
+	<div class="text12">
+		<img src="spring.png" height="200px" width="200px">
+	</div>
+</div>
+
+<div class="grid-item item17"></div>
+<div class="hide17">
+	<p>A <a href="https://www.ebay.com/itm/VINTAGE-1970-NFL-NEW-YORK-JETS-LOS-ANGELES-RAMS-FULL-FOOTBALL-TICKET-NAMATH/233931622435?hash=item3677694823:g:EekAAOSw~QdgT9XS">ticket </a>to the L.A. Rams VS. New York Jets NFL November 15, 1970 <a href="https://www.youtube.com/watch?v=MyvSEEnaPkM">game </a> at the Los Angeles Coliseum. The 1970 Los Angeles Rams season was the team's 33rd year with the National Football League and the 25th season in Los Angeles</p>
+</div>
+
+<div class="grid-item item18"></div>
+<div class="hide18">
+	<p>A <a href="
+https://www.pinterest.es/pin/586945763911229132/
+">ticket </a>to the July 9, 1940 All Star Game of the American League VS. National League at the <a href="https://www.youtube.com/watch?v=OKTtTFsvEjw">Sportsmen Park</a> in St. Louis. The game resulted in the National League defeating the American League 4–0.</p>
+</div>
+
+<div class="grid-item item19"></div>
+<div class="hide19">
+	<p>A <a href="https://www.ebay.com/itm/1978-MARINERS-OPENING-DAY-TICKET-STUB-4-7-78-TWINS-/202648351187">ticket</a> to the Seattle Mariners at the <a href="https://www.youtube.com/watch?v=MNGhYaWW8S0">opening day</a> April 7, 1978 in Minnesota. The 1978 Seattle Mariners season was the second in franchise history. The Mariners ended the season by finishing 7th in the American League West with a record of 56–104.</p>
+</div>
+
+<div class="grid-item item20"></div>
+<div class="hide20">
+	<p>A 1940 season <a href="https://www.pinterest.es/pin/483644447456915321/">ticket </a>for the American Baseball Club of Philadelphia at the <a href="https://www.youtube.com/watch?v=dOry-QwOT0c&feature=emb_imp_woyt">Shibe Park.</a> Philadelphia has played a major role in the history of American’s national pastime. Baseball, has thrived in the city for nearly two centuries, and has been prominent in the evolution of the sport. Philadelphia and baseball are unequivocally linked in a relationship that is as tight as anything else in the city.</p>
+</div>
+
+<div class="grid-item item21"></div>
+<div class="hide21">
+	<p>A <a href="http://www.vintagemeohmy.com/">ticket </a>for the April 17, 1950 San Francisco <a href="https://www.youtube.com/watch?v=RnJmZAxwrd0">Symphony Orchestra</a> with Arthur Fiedler conducting Tombola "75" Concert at the Civic Auditorium. The San Francisco Symphony (SFS), founded in 1911,[1] is an American orchestra based in San Francisco, California. Since 1980 the orchestra has been resident at the Louise M. Davies Symphony Hall in the city's Hayes Valley neighborhood. Since 1995, Michael Tilson Thomas has been the orchestra's music director.</p>
+</div>
+<div class="grid-item item22"></div>
+<div class="hide22">
+	<div class="text21">
+	<p>A <a href="
+https://www.ticketstubcollection.com/ticket-stubs/1975-rolling-stones/
+">ticket </a>to the July 1, 1975 Rolling Stones <a href="https://www.youtube.com/watch?v=OogcwvHVoaU">concert</a> at Capital Center. The Rolling Stones' Tour of the Americas '75 was a <a href="https://www.udiscovermusic.com/stories/rock-royalty-tour-america/">1975 concert tour </a>originally intended to reach both North and South America. The plans for concerts in Central and South America never solidified, however, and the tour covered only the United States and Canada.</p></div>
+	<div class="text22">
+		<img src="rolling.jpg" height="200px" width="200px"></div>
+</div>
+
+<div class="grid-item item23"></div>
+<div class="hide23">
+	<p>A <a href="
+https://www.queenconcerts.com/memorabilia/tickets/queen-late-70s.html
+">ticket</a> to the January 28, 1977 Queen <a href="https://www.youtube.com/watch?v=uCG-NJ0RQtc">perfromnace </a> at the Chicago Stadium. Due to bad weather, the trucks with all of Queen's gear were delayed in getting from Montreal to Chicago. One truck blew off the road, and another P.A. system had to be flown in for this show.</p>
+</div>
+<div class="grid-item item24"></div>
+<div class="hide24">
+	<div class="text3">
+		<p>A <a href="https://www.guitars101.com/threads/pink-floyd-1972-the-darker-side-of-the-rising-sun-gr-box-24.171740/"> ticket </a>to the March 13, 1972 Pink Floyd performance at the Nakanoshima Sports Center in Sapporo, Hokkaido, Japan. <br>This performance was called the "Last Gig On The Moon." In 1972 Pink Floyd started the Japan Chronicles and the tour was named "The Darker side of Rising Sun."</p>
+	<div class="text4">
+		<img src="floyd.jpg" height="200px" width="400px"/>
+	</div>
+</div>
+<!-- <script type="tickets.js"></script> -->
+  
+</body>
+</html>
